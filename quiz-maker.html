@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Maker</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!-- we provide our site intro inside of header tag-->
+<header id="header"> 
+    <div class="qnum">
+		<h1 id="progress">0 / 50</h1>
+	</div>
+	<div class="title">
+		<h1 class="site-title">Dynamic Quiz Maker</h1>
+	</div>
+	<div class="score" style="text-align: center;">
+		<p id="score-counter">0</p>
+		<p class="points">Points</p>
+	</div>
+</header>
+
+<!-- All questtions are displayed in this container-->
+<div id="content">
+	<div id="question-box"><p id="the-question"></p></div>
+	<div id="answer-box">
+		<ul>
+			<li class="answer">A: <span id="first-option"></span></li>
+			<li class="answer">B: <span id="second-option"></span></li>
+			<li class="answer">C: <span id="third-option"></span></li>
+			<li class="answer">D: <span id="fourth-option"></span></li>
+		</ul>
+    </div>
+    
+   
+</div>
+
+</div>
+<!-- Result is displayed only when all questions are done (by default hidden)-->
+<div class="results-container">
+	<div class="results">
+		<h1>Congratulations!</h1>
+        <div class="result-text"><h3>You've finished the quiz!<br/> Out of a total of <span id="num-total">0</span> questions, you've answered <span id="num-correct">0</span> questions correctly</h3></div>
+            <br/><button class="startAgain">Re-Start ?</button>
+	</div>
+</div>
+
+
+<script src="quiz.js"></script>
+
+</body>
+</html>
